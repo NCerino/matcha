@@ -28,11 +28,14 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.header {
+/* .header {
     margin: 40px 20px 0;
     font-size: 0;
-    height: 80px;
+    height: 80px; */
+    background-color: fffbf7;
 }
+
+
 
 .header li {
     display: inline;
@@ -43,15 +46,15 @@ body {
     padding: 0;
 }
 
-.header > *{
+/* .header > *{
    display: inline-block; 
    font-size: 16px;
    vertical-align: middle;
-}
-.header .logo {
-    width: 20%;
-}
+} */
 
+/* .header .logo {
+    width: 20%;
+} */
 
 .header .navbar {
     width: 60%;
@@ -59,7 +62,7 @@ body {
 }
 
 .header .actions {
-    width: 20%;
+    /* width: 20%; */
     text-align: right;
     font-size: 14px;
 }
@@ -70,6 +73,7 @@ body {
     border: 0;
     border-radius: 5px;
     padding: 12px 14px;
+    margin-left: 7px;
 }
 .main {
     margin-top: 280px;
@@ -127,7 +131,7 @@ body {
     padding: 6px 20px;
     width: 60%;
     max-width: 250px;
-    height: 75%;
+    height: 80%;
     border-radius: 8px;
 }
 
@@ -141,7 +145,7 @@ body {
     border-bottom-right-radius: 8px;
     padding: 6px 20px;
     margin-left: -10px;
-    height: 100%;
+    height: 70%;
 }
 
 .publish .signup-form {
@@ -393,3 +397,70 @@ body {
     left:0;
 }
 
+@media (max-width: 425px) {
+   .navbar,
+   .actions {
+       display: none;
+   }
+
+   .main {
+       margin-top: 130px;
+   }
+
+   .main h1 {
+       font-size: 30px;
+   }
+
+   .main .imagen-propiedades {
+       width: 100%;
+   }
+
+   .promo {
+       flex-direction: column;
+       width: 90%;
+   }
+
+   .explanatory-video > video {
+       width: 100%;
+   }
+
+   .publish {
+       margin-top: 15px;
+   }
+
+   .publish > h3 {
+       font-size: 20px;
+       line-height: 1.2;
+   }
+
+   .publish .signup-form input {
+       width: 50%;
+   }
+
+   .features {
+       grid-template: repeat(4,1fr)/ 1fr;
+       padding-left: 0;
+       padding-right: 0;
+       height: 1320px;
+   }
+
+   .features-image {
+       display: none;
+   }
+
+   .features-image1 {
+    display: none;
+   }
+
+    .features-image2 {
+    display: none;
+   }
+
+    .features-image3 {
+    display: none;
+   }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+   
+}
